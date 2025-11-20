@@ -117,15 +117,20 @@ Agents are defined in `.claude/agents/` - you can customize them or create your 
 
 If you prefer not to use the wizard:
 
-1. Update hook path in `.claude/settings.local.json`:
+1. Copy the settings template:
+   ```bash
+   cp .claude/settings.local.json.example .claude/settings.local.json
+   ```
+
+2. Update hook path in `.claude/settings.local.json`:
    - Replace `REPLACE_WITH_ABSOLUTE_PATH` with your project's absolute path
 
-2. Make scripts executable:
+3. Make scripts executable:
    ```bash
    chmod +x .claude/journal/*.py
    ```
 
-3. (Optional) Install Ollama for AI summaries:
+4. (Optional) Install Ollama for AI summaries:
    ```bash
    curl -fsSL https://ollama.ai/install.sh | sh
    ollama pull llama3.2:1b

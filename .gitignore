@@ -3,6 +3,9 @@
 .env.local
 .env.*.local
 
+# Claude Code settings (contains absolute paths)
+.claude/settings.local.json
+
 # Journal database (contains conversation history)
 .claude/journal/journal.db
 

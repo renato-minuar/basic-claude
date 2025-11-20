@@ -28,16 +28,21 @@ Ask the user which features they want to enable:
 
 If user chose journal:
 
-1. Update `.claude/settings.local.json`:
+1. Copy settings template if it doesn't exist:
+   ```bash
+   cp .claude/settings.local.json.example .claude/settings.local.json
+   ```
+
+2. Update `.claude/settings.local.json`:
    - Replace `REPLACE_WITH_ABSOLUTE_PATH` with `PROJECT_PATH`
 
-2. Make scripts executable:
+3. Make scripts executable:
    ```bash
    chmod +x .claude/journal/stop-hook.py
    chmod +x .claude/journal/get-session-entries.py
    ```
 
-3. Ask about Ollama:
+4. Ask about Ollama:
    - "Do you have Ollama installed for AI summaries? (If not, journal will use truncated text)"
    - Options: Yes, No, Install it for me
 

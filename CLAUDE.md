@@ -168,6 +168,7 @@ This interactive wizard will:
 - Verify everything works
 
 **Manual setup** (if you prefer):
+- [ ] Copy settings: `cp .claude/settings.local.json.example .claude/settings.local.json`
 - [ ] Update hook path in `.claude/settings.local.json`
 - [ ] Make scripts executable: `chmod +x .claude/journal/*.py`
 - [ ] Fill in TODOs in this file
