@@ -95,6 +95,24 @@ CLAUDE.md                    # Quick reference (entry point)
 | `/end` | Generate session summary to journal |
 | `/journal` | Enable or disable journal system |
 
+### Agents
+
+Custom agents for specialized tasks. Invoke with `@agent-name` or ask Claude to use them.
+
+| Agent | Description |
+|-------|-------------|
+| `debugger` | Systematic debugging through evidence gathering and hypothesis testing |
+| `designer` | Bold UI/UX designer who creates premium interfaces (Stripe/Linear quality) |
+| `design-review` | Comprehensive UI review with prioritized findings |
+
+**Example usage:**
+```
+@designer Review this component and suggest improvements
+@debugger Help me find why this API call is failing
+```
+
+Agents are defined in `.claude/agents/` - you can customize them or create your own.
+
 ## Manual Setup
 
 If you prefer not to use the wizard:
